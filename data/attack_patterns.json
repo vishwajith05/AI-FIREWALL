@@ -1,0 +1,25 @@
+{
+  "prompt_injection": [
+    "ignore previous instructions",
+    "forget previous instructions",
+    "override previous instructions",
+    "disregard all rules",
+    "bypass safety rules"
+  ],
+
+  "jailbreak": [
+    "act as dan",
+    "developer mode",
+    "jailbreak",
+    "do anything now",
+    "unrestricted ai"
+  ],
+
+  "data_exfiltration": [
+    "reveal system prompt",
+    "show system instructions",
+    "print hidden prompt",
+    "display api key",
+    "show secret key"
+  ]
+}
