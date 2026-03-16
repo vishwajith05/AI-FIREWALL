@@ -18,9 +18,10 @@ attack_types = {}
 
 for attack in attacks:
     parts = attack.split("|")
-    if len(parts) >= 2:
-        attack_type = parts[1].strip()
+    if len(parts) >= 3:
+        attack_type = parts[2].strip()
         attack_types[attack_type] = attack_types.get(attack_type, 0) + 1
+
 
 st.metric("Total Attack Attempts", total_attacks)
 
@@ -28,6 +29,7 @@ st.subheader("Attack Type Distribution")
 
 for attack_type, count in attack_types.items():
     st.write(f"{attack_type}: {count}")
+
 
 st.subheader("Recent Attacks")
 
